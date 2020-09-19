@@ -2114,7 +2114,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -33576,12 +33575,8 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("div", { staticClass: "col-sm-6" }, [
                 _c("ol", { staticClass: "breadcrumb float-sm-right" }, [
-                  _c("li", { staticClass: "breadcrumb-item" }, [
-                    _c("a", { attrs: { href: "#" } }, [_vm._v("Home")])
-                  ]),
-                  _vm._v(" "),
                   _c("li", { staticClass: "breadcrumb-item active" }, [
-                    _vm._v("Blank Page")
+                    _c("a", [_vm._v("Home!!!")])
                   ])
                 ])
               ])
@@ -49328,8 +49323,8 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/dtables/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /var/www/dtables/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /var/www/laravel-adminlte-template/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /var/www/laravel-adminlte-template/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
