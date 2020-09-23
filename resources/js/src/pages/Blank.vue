@@ -10,7 +10,7 @@
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item">
-                                <router-link to="/">Home</router-link>
+                                <router-link :to="{name: 'index'}">Home</router-link>
                             </li>
                             <li class="breadcrumb-item active">Blank Page</li>
                         </ol>

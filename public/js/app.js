@@ -33318,7 +33318,24 @@ var render = function() {
     "aside",
     { staticClass: "main-sidebar sidebar-dark-primary elevation-4" },
     [
-      _vm._m(0),
+      _c(
+        "router-link",
+        { staticClass: "brand-link", attrs: { to: { name: "index" } } },
+        [
+          _c("img", {
+            staticClass: "brand-image img-circle elevation-3",
+            staticStyle: { opacity: ".8" },
+            attrs: {
+              src: "/vendor/adminlte/dist/img/AdminLTELogo.png",
+              alt: "AdminLTE Logo"
+            }
+          }),
+          _vm._v(" "),
+          _c("span", { staticClass: "brand-text font-weight-light" }, [
+            _vm._v("AdminLTE 3")
+          ])
+        ]
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "sidebar" }, [
         _c("nav", { staticClass: "mt-2" }, [
@@ -33339,7 +33356,10 @@ var render = function() {
                 [
                   _c(
                     "router-link",
-                    { staticClass: "nav-link", attrs: { to: "/blank" } },
+                    {
+                      staticClass: "nav-link",
+                      attrs: { to: { name: "blank" } }
+                    },
                     [
                       _c("i", { staticClass: "nav-icon fas fa-th" }),
                       _vm._v(" "),
@@ -33357,34 +33377,11 @@ var render = function() {
           )
         ])
       ])
-    ]
+    ],
+    1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      { staticClass: "brand-link", attrs: { href: "index3.html" } },
-      [
-        _c("img", {
-          staticClass: "brand-image img-circle elevation-3",
-          staticStyle: { opacity: ".8" },
-          attrs: {
-            src: "/vendor/adminlte/dist/img/AdminLTELogo.png",
-            alt: "AdminLTE Logo"
-          }
-        }),
-        _vm._v(" "),
-        _c("span", { staticClass: "brand-text font-weight-light" }, [
-          _vm._v("AdminLTE 3")
-        ])
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -33406,42 +33403,50 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "nav",
+    {
+      staticClass: "main-header navbar navbar-expand navbar-white navbar-light"
+    },
+    [
+      _c("ul", { staticClass: "navbar-nav" }, [
+        _c(
+          "li",
+          { staticClass: "nav-item" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "nav-link",
+                attrs: {
+                  to: { name: "index" },
+                  "data-widget": "pushmenu",
+                  role: "button"
+                }
+              },
+              [_c("i", { staticClass: "fas fa-bars" })]
+            )
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "nav",
-      {
-        staticClass:
-          "main-header navbar navbar-expand navbar-white navbar-light"
-      },
-      [
-        _c("ul", { staticClass: "navbar-nav" }, [
-          _c("li", { staticClass: "nav-item" }, [
-            _c(
-              "a",
-              {
-                staticClass: "nav-link",
-                attrs: { "data-widget": "pushmenu", href: "#", role: "button" }
-              },
-              [_c("i", { staticClass: "fas fa-bars" })]
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("ul", { staticClass: "navbar-nav ml-auto" }, [
-          _c("li", { staticClass: "nav-item" }, [
-            _c("a", { staticClass: "nav-link", attrs: { href: "/login" } }, [
-              _c("i", { staticClass: "fas fa-sign-out-alt" })
-            ])
-          ])
+    return _c("ul", { staticClass: "navbar-nav ml-auto" }, [
+      _c("li", { staticClass: "nav-item" }, [
+        _c("a", { staticClass: "nav-link", attrs: { href: "/login" } }, [
+          _c("i", { staticClass: "fas fa-sign-out-alt" })
         ])
-      ]
-    )
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -33482,7 +33487,11 @@ var render = function() {
                 _c(
                   "li",
                   { staticClass: "breadcrumb-item" },
-                  [_c("router-link", { attrs: { to: "/" } }, [_vm._v("Home")])],
+                  [
+                    _c("router-link", { attrs: { to: { name: "index" } } }, [
+                      _vm._v("Home")
+                    ])
+                  ],
                   1
                 ),
                 _vm._v(" "),
@@ -33576,7 +33585,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "col-sm-6" }, [
                 _c("ol", { staticClass: "breadcrumb float-sm-right" }, [
                   _c("li", { staticClass: "breadcrumb-item active" }, [
-                    _c("a", [_vm._v("Home!!!")])
+                    _c("a", [_vm._v("Home")])
                   ])
                 ])
               ])

@@ -61,5 +61,14 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
+    },
+    "repositories": {
+        "dboro/laravel-base": {
+            "type": "path",
+            "url": "../packages/laravel-base",
+            "options": {
+                "symlink": true
+            }
+        }
     }
 }
